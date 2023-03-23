@@ -5,6 +5,9 @@ const app = express();
 
 
 const serverStartAndSetup = () =>{
+    app.use(express.json());
+
+    
     app.listen(PORT,()=>{
         console.log(`Server running at ${PORT}`);
     })
