@@ -10,7 +10,7 @@ const app = express();
 const serverStartAndSetup = () =>{
     app.use(express.json());
 
-    app.use('/api/v1',routes);
+    app.use('/bookingService/api/v1',routes);
     
     app.listen(PORT,()=>{
         if(SYNC_DB){
